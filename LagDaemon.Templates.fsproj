@@ -5,7 +5,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="Library.fs" />
+    <Content Include="Tests\TemplateProcessorUnitTests.fs" />
+    <Content Include="Templates\TestTemplate1.txt" />
+    <Compile Include="Src\TemplateParser.fs" />
   </ItemGroup>
+
+  <ItemGroup />
 
 </Project>

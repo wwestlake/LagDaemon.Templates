@@ -1,0 +1,8 @@
+C:\Users\wwestlake\Source\Repos\wwestlake\LagDaemon.Templates\bin\Debug\netstandard2.0\LagDaemon.Templates.deps.json
+C:\Users\wwestlake\Source\Repos\wwestlake\LagDaemon.Templates\bin\Debug\netstandard2.0\LagDaemon.Templates.dll
+C:\Users\wwestlake\Source\Repos\wwestlake\LagDaemon.Templates\bin\Debug\netstandard2.0\LagDaemon.Templates.pdb
+C:\Users\wwestlake\Source\Repos\wwestlake\LagDaemon.Templates\obj\Debug\netstandard2.0\LagDaemon.Templates.fsprojAssemblyReference.cache
+C:\Users\wwestlake\Source\Repos\wwestlake\LagDaemon.Templates\obj\Debug\netstandard2.0\LagDaemon.Templates.AssemblyInfoInputs.cache
+C:\Users\wwestlake\Source\Repos\wwestlake\LagDaemon.Templates\obj\Debug\netstandard2.0\LagDaemon.Templates.AssemblyInfo.fs
+C:\Users\wwestlake\Source\Repos\wwestlake\LagDaemon.Templates\obj\Debug\netstandard2.0\LagDaemon.Templates.dll
+C:\Users\wwestlake\Source\Repos\wwestlake\LagDaemon.Templates\obj\Debug\netstandard2.0\LagDaemon.Templates.pdb
