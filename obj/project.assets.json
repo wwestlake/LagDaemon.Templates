@@ -2,6 +2,36 @@
   "version": 3,
   "targets": {
     ".NETStandard,Version=v2.0": {
+      "FParsec/1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "FSharp.Core": "4.2.3",
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/netstandard1.6/FParsec.dll": {},
+          "lib/netstandard1.6/FParsecCS.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.6/FParsec.dll": {},
+          "lib/netstandard1.6/FParsecCS.dll": {}
+        }
+      },
+      "FParsec-Pipes/1.1.1": {
+        "type": "package",
+        "dependencies": {
+          "FParsec": "1.0.3",
+          "FSharp.Core": "4.2.3",
+          "NETStandard.Library": "1.6.1",
+          "System.ValueTuple": "4.4.0"
+        },
+        "compile": {
+          "lib/netstandard1.6/FParsec-Pipes.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.6/FParsec-Pipes.dll": {}
+        }
+      },
       "FSharp.Core/4.7.0": {
         "type": "package",
         "compile": {
@@ -75,10 +105,57 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "System.ValueTuple/4.4.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/_._": {}
+        }
       }
     }
   },
   "libraries": {
+    "FParsec/1.0.3": {
+      "sha512": "0VoZapcSUHsNCixYawx8RFZHJMRVykaKsks5OOUXRP0bZCpr7UCP6kIjbVFGHIqqBGPtICUMy7j521sH0ZcmrQ==",
+      "type": "package",
+      "path": "fparsec/1.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fparsec.1.0.3.nupkg.sha512",
+        "fparsec.nuspec",
+        "lib/net40-client/FParsec.dll",
+        "lib/net40-client/FParsec.xml",
+        "lib/net40-client/FParsecCS.dll",
+        "lib/net40-client/FParsecCS.xml",
+        "lib/netstandard1.6/FParsec.dll",
+        "lib/netstandard1.6/FParsec.xml",
+        "lib/netstandard1.6/FParsecCS.dll",
+        "lib/netstandard1.6/FParsecCS.xml",
+        "lib/portable-net45+win8+wp8+wpa81/FParsec.dll",
+        "lib/portable-net45+win8+wp8+wpa81/FParsec.xml",
+        "lib/portable-net45+win8+wp8+wpa81/FParsecCS.dll",
+        "lib/portable-net45+win8+wp8+wpa81/FParsecCS.xml"
+      ]
+    },
+    "FParsec-Pipes/1.1.1": {
+      "sha512": "vF0/IoXGE0ksA+tEQaglRnDJRpJzpPxApUNjJ12NwHPzfWLrO+qAhgb3ZdyAlur9kLQOkszIJyJfulG6JQHxew==",
+      "type": "package",
+      "path": "fparsec-pipes/1.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fparsec-pipes.1.1.1.nupkg.sha512",
+        "fparsec-pipes.nuspec",
+        "lib/net45/FParsec-Pipes.dll",
+        "lib/net45/FParsec-Pipes.xml",
+        "lib/netstandard1.6/FParsec-Pipes.dll",
+        "lib/netstandard1.6/FParsec-Pipes.xml"
+      ]
+    },
     "FSharp.Core/4.7.0": {
       "sha512": "6Bf2qzSCaJoP6tTfO+a5muUS7QbyJANqSut73zQvwQ9It5P0ITz9VKseeia2ofco30c55EQ0jA2wf2+A2gpGnw==",
       "type": "package",
@@ -266,10 +343,57 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "System.ValueTuple/4.4.0": {
+      "sha512": "BahUww/+mdP4ARCAh2RQhQTg13wYLVrBb9SYVgW8ZlrwjraGCXHGjo0oIiUfZ34LUZkMMR+RAzR7dEY4S1HeQQ==",
+      "type": "package",
+      "path": "system.valuetuple/4.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net461/System.ValueTuple.dll",
+        "lib/net461/System.ValueTuple.xml",
+        "lib/net47/System.ValueTuple.dll",
+        "lib/net47/System.ValueTuple.xml",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.0/System.ValueTuple.dll",
+        "lib/netstandard1.0/System.ValueTuple.xml",
+        "lib/netstandard2.0/_._",
+        "lib/portable-net40+sl4+win8+wp8/System.ValueTuple.dll",
+        "lib/portable-net40+sl4+win8+wp8/System.ValueTuple.xml",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net461/System.ValueTuple.dll",
+        "ref/net461/System.ValueTuple.xml",
+        "ref/net47/System.ValueTuple.dll",
+        "ref/net47/System.ValueTuple.xml",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard2.0/_._",
+        "ref/portable-net40+sl4+win8+wp8/System.ValueTuple.dll",
+        "ref/portable-net40+sl4+win8+wp8/System.ValueTuple.xml",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.valuetuple.4.4.0.nupkg.sha512",
+        "system.valuetuple.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
+      "FParsec >= 1.0.3",
+      "FParsec-Pipes >= 1.1.1",
       "FSharp.Core >= 4.7.0",
       "NETStandard.Library >= 2.0.3"
     ]
@@ -313,6 +437,14 @@
     "frameworks": {
       "netstandard2.0": {
         "dependencies": {
+          "FParsec": {
+            "target": "Package",
+            "version": "[1.0.3, )"
+          },
+          "FParsec-Pipes": {
+            "target": "Package",
+            "version": "[1.1.1, )"
+          },
           "FSharp.Core": {
             "target": "Package",
             "version": "[4.7.0, )"

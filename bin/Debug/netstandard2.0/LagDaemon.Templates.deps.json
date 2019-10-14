@@ -9,11 +9,43 @@
     ".NETStandard,Version=v2.0/": {
       "LagDaemon.Templates/1.0.0": {
         "dependencies": {
+          "FParsec": "1.0.3",
+          "FParsec-Pipes": "1.1.1",
           "FSharp.Core": "4.7.0",
           "NETStandard.Library": "2.0.3"
         },
         "runtime": {
           "LagDaemon.Templates.dll": {}
+        }
+      },
+      "FParsec/1.0.3": {
+        "dependencies": {
+          "FSharp.Core": "4.7.0",
+          "NETStandard.Library": "2.0.3"
+        },
+        "runtime": {
+          "lib/netstandard1.6/FParsec.dll": {
+            "assemblyVersion": "1.0.3.0",
+            "fileVersion": "1.0.3.0"
+          },
+          "lib/netstandard1.6/FParsecCS.dll": {
+            "assemblyVersion": "1.0.3.0",
+            "fileVersion": "1.0.3.0"
+          }
+        }
+      },
+      "FParsec-Pipes/1.1.1": {
+        "dependencies": {
+          "FParsec": "1.0.3",
+          "FSharp.Core": "4.7.0",
+          "NETStandard.Library": "2.0.3",
+          "System.ValueTuple": "4.4.0"
+        },
+        "runtime": {
+          "lib/netstandard1.6/FParsec-Pipes.dll": {
+            "assemblyVersion": "1.1.1.0",
+            "fileVersion": "0.0.0.0"
+          }
         }
       },
       "FSharp.Core/4.7.0": {
@@ -70,7 +102,8 @@
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0"
         }
-      }
+      },
+      "System.ValueTuple/4.4.0": {}
     }
   },
   "libraries": {
@@ -78,6 +111,20 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "FParsec/1.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-0VoZapcSUHsNCixYawx8RFZHJMRVykaKsks5OOUXRP0bZCpr7UCP6kIjbVFGHIqqBGPtICUMy7j521sH0ZcmrQ==",
+      "path": "fparsec/1.0.3",
+      "hashPath": "fparsec.1.0.3.nupkg.sha512"
+    },
+    "FParsec-Pipes/1.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-vF0/IoXGE0ksA+tEQaglRnDJRpJzpPxApUNjJ12NwHPzfWLrO+qAhgb3ZdyAlur9kLQOkszIJyJfulG6JQHxew==",
+      "path": "fparsec-pipes/1.1.1",
+      "hashPath": "fparsec-pipes.1.1.1.nupkg.sha512"
     },
     "FSharp.Core/4.7.0": {
       "type": "package",
@@ -99,6 +146,13 @@
       "sha512": "sha512-st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
       "path": "netstandard.library/2.0.3",
       "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
+    },
+    "System.ValueTuple/4.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-BahUww/+mdP4ARCAh2RQhQTg13wYLVrBb9SYVgW8ZlrwjraGCXHGjo0oIiUfZ34LUZkMMR+RAzR7dEY4S1HeQQ==",
+      "path": "system.valuetuple/4.4.0",
+      "hashPath": "system.valuetuple.4.4.0.nupkg.sha512"
     }
   }
 }

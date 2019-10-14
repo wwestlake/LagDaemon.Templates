@@ -5,11 +5,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="Script1.fsx" />
     <Content Include="Tests\TemplateProcessorUnitTests.fs" />
     <Content Include="Templates\TestTemplate1.txt" />
     <Compile Include="Src\TemplateParser.fs" />
   </ItemGroup>
 
   <ItemGroup />
+
+  <ItemGroup>
+    <PackageReference Include="FParsec" Version="1.0.3" />
+    <PackageReference Include="FParsec-Pipes" Version="1.1.1" />
+  </ItemGroup>
 
 </Project>
