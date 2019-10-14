@@ -8,7 +8,7 @@
       "version": "1.0.0",
       "restore": {
         "projectUniqueName": "C:\\Users\\wwestlake\\Source\\Repos\\wwestlake\\LagDaemon.Templates\\LagDaemon.Templates.fsproj",
-        "projectName": "LagDaemon.Templates",
+        "projectName": "LagDaemon.Templates.FSharp",
         "projectPath": "C:\\Users\\wwestlake\\Source\\Repos\\wwestlake\\LagDaemon.Templates\\LagDaemon.Templates.fsproj",
         "packagesPath": "C:\\Users\\wwestlake\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\wwestlake\\Source\\Repos\\wwestlake\\LagDaemon.Templates\\obj\\",
@@ -38,6 +38,14 @@
       "frameworks": {
         "netstandard2.0": {
           "dependencies": {
+            "FParsec": {
+              "target": "Package",
+              "version": "[1.0.3, )"
+            },
+            "FParsec-Pipes": {
+              "target": "Package",
+              "version": "[1.1.1, )"
+            },
             "FSharp.Core": {
               "target": "Package",
               "version": "[4.7.0, )"

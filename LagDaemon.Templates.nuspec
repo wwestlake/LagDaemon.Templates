@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <licenseUrl type="file">LICENSE</licenseUrl>
+    <projectUrl>https://github.com/wwestlake/LagDaemon.Templates</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <releaseNotes>Initial Release</releaseNotes>
+    <copyright>Copyright 2019, William W. Westlake</copyright>
+    <tags>F#, template, fparsec</tags>
+  </metadata>
+</package>
