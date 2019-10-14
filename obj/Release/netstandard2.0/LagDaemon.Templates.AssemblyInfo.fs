@@ -7,11 +7,13 @@ open System
 open System.Reflection
 
 
-[<assembly: System.Reflection.AssemblyCompanyAttribute("LagDaemon.Templates")>]
+[<assembly: System.Reflection.AssemblyCompanyAttribute("William W. Westlake")>]
 [<assembly: System.Reflection.AssemblyConfigurationAttribute("Release")>]
+[<assembly: System.Reflection.AssemblyCopyrightAttribute("Copyright (c) 2019, WIlliam W. Westlake, Released under the MIT license")>]
+[<assembly: System.Reflection.AssemblyDescriptionAttribute("A simple utility to create templates in FSharp.  You can supply your own keywords and functions that take string parameters and replace text.")>]
 [<assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")>]
 [<assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")>]
-[<assembly: System.Reflection.AssemblyProductAttribute("LagDaemon.Templates")>]
+[<assembly: System.Reflection.AssemblyProductAttribute("LagDaemon.Templates.FSharp")>]
 [<assembly: System.Reflection.AssemblyTitleAttribute("LagDaemon.Templates")>]
 [<assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")>]
 do()

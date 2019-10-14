@@ -2,9 +2,21 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageId>LagDaemon.Templates.FSharp</PackageId>
+    <Authors>William W. Westlake</Authors>
+    <Product>LagDaemon.Templates.FSharp</Product>
+    <Description>A simple utility to create templates in FSharp.  You can supply your own keywords and functions that take string parameters and replace text.</Description>
+    <Copyright>Copyright (c) 2019, WIlliam W. Westlake, Released under the MIT license</Copyright>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageProjectUrl>https://github.com/wwestlake/LagDaemon.Templates/tree/master</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/wwestlake/LagDaemon.Templates/tree/master</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
     <None Include="Script1.fsx" />
     <Content Include="Tests\TemplateProcessorUnitTests.fs" />
     <Content Include="Templates\TestTemplate1.txt" />
