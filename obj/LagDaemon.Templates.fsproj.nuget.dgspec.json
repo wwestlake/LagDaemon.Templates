@@ -5,7 +5,7 @@
   },
   "projects": {
     "C:\\Users\\wwestlake\\Source\\Repos\\wwestlake\\LagDaemon.Templates\\LagDaemon.Templates.fsproj": {
-      "version": "1.0.2",
+      "version": "1.0.3",
       "restore": {
         "projectUniqueName": "C:\\Users\\wwestlake\\Source\\Repos\\wwestlake\\LagDaemon.Templates\\LagDaemon.Templates.fsproj",
         "projectName": "LagDaemon.Templates.FSharp",

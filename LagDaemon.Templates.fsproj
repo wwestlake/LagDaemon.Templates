@@ -11,10 +11,10 @@
     <PackageProjectUrl>https://github.com/wwestlake/LagDaemon.Templates/tree/master</PackageProjectUrl>
     <RepositoryUrl>https://github.com/wwestlake/LagDaemon.Templates/tree/master</RepositoryUrl>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <AssemblyVersion>1.0.2.0</AssemblyVersion>
-    <FileVersion>1.0.2.0</FileVersion>
-    <Version>1.0.2</Version>
-    <PackageReleaseNotes>Corrected a bug in the parsing that appeared after changing to .net 4.72.  FParsec has an issue with Net Standard 1.6 and framework 4.7.2</PackageReleaseNotes>
+    <AssemblyVersion>1.0.3.0</AssemblyVersion>
+    <FileVersion>1.0.3.0</FileVersion>
+    <Version>1.0.3</Version>
+    <PackageReleaseNotes>now returns Result Ok string or Error message</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>

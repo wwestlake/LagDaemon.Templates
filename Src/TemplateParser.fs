@@ -58,11 +58,11 @@ module TemplateParser =
         runParserOnString p () "test" input
     
     let parseFile p filename =
-        runParserOnFile p () filename System.Text.Encoding.UTF8
+            runParserOnFile p () filename System.Text.Encoding.UTF8
 
     let runReplacer replacer cmd parameters = 
-        let (Replacer f) = replacer
-        f cmd parameters
+            let (Replacer f) = replacer
+            f cmd parameters
 
     let add replacementMap key f =
         let (ReplacementMap map) = replacementMap
@@ -92,15 +92,30 @@ module TemplateParser =
                 | Tag tag -> 
                     let (Command cmd) = tag.command
                     match tag.param with
-                    | Some (Param p) -> loop tail <| text + (runReplacer (find replacementMap cmd) cmd p)
-                    | None -> loop tail <| text + (runReplacer (find replacementMap cmd) cmd [])
+                    | Some (Param p) -> 
+                        let repl = runReplacer (find replacementMap cmd) cmd p
+                        loop tail (text + repl)
+                    | None -> 
+                        let repl = runReplacer (find replacementMap cmd) cmd []
+                        loop tail (text + repl)
     
     
         match parser command input with
         | Success (r,_,_) -> (loop r "")
         | Failure (_,msg,_) -> msg.ToString()
     
-    let processString = processDoc parseString 
-    let processFile = processDoc parseFile 
+    let processString input map = 
+        let parser = processDoc parseString 
+        try 
+            Result.Ok <| parser input map
+        with
+        | excn -> Result.Error <| excn.ToString()
+            
+    let processFile filename map =
+        let parser = processDoc parseFile
+        try 
+            Result.Ok <| parser filename map
+        with
+        | excn -> Result.Error <| excn.ToString()
 
 
