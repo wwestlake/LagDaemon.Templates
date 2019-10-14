@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>net472</TargetFramework>
     <PackageId>LagDaemon.Templates.FSharp</PackageId>
     <Authors>William W. Westlake</Authors>
     <Product>LagDaemon.Templates.FSharp</Product>
@@ -10,6 +10,11 @@
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageProjectUrl>https://github.com/wwestlake/LagDaemon.Templates/tree/master</PackageProjectUrl>
     <RepositoryUrl>https://github.com/wwestlake/LagDaemon.Templates/tree/master</RepositoryUrl>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <AssemblyVersion>1.0.2.0</AssemblyVersion>
+    <FileVersion>1.0.2.0</FileVersion>
+    <Version>1.0.2</Version>
+    <PackageReleaseNotes>Corrected a bug in the parsing that appeared after changing to .net 4.72.  FParsec has an issue with Net Standard 1.6 and framework 4.7.2</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>

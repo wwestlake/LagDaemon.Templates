@@ -6,7 +6,7 @@
     <title>$title$</title>
     <authors>$author$</authors>
     <owners>$author$</owners>
-    <licenseUrl type="file">LICENSE</licenseUrl>
+    <license type="file">LICENSE</license>
     <projectUrl>https://github.com/wwestlake/LagDaemon.Templates</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>
@@ -14,4 +14,7 @@
     <copyright>Copyright 2019, William W. Westlake</copyright>
     <tags>F#, template, fparsec</tags>
   </metadata>
+  <files>
+    <file src="bin\Release\netstandard2.0\LagDaemon.Templates.dll" />
+  </files>
 </package>

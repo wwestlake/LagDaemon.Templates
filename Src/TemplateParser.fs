@@ -3,6 +3,7 @@
 module TemplateParser =
 
     open FParsec
+    open System.IO
 
     type Replacer = Replacer of (string -> string list -> string )
     type Command = Command of string
@@ -29,7 +30,7 @@ module TemplateParser =
     let ws1 = spaces1
     let str_ws s = pstring s .>> ws
     
-    let text : Parser<_> =  many1Satisfy (isNoneOf "") |>> Text
+    let text : Parser<_> =  many1Satisfy (isNoneOf "{}") |>> Text
     
     let parameter : Parser<_> =
         let isparameterFirstChar c = isLetter c || c = '_'
@@ -51,13 +52,13 @@ module TemplateParser =
                                     }
                                 )
     
-    let command = many <| choice [text ;  commandParam] 
+    let command = many <| choice [ commandParam; text] 
     
     let parseString p input =
         runParserOnString p () "test" input
     
     let parseFile p filename =
-        runParserOnFile p () filename (System.Text.Encoding.UTF8)
+        runParserOnFile p () filename System.Text.Encoding.UTF8
 
     let runReplacer replacer cmd parameters = 
         let (Replacer f) = replacer
